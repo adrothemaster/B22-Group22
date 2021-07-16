@@ -18,7 +18,7 @@ public class BrowserUtils {
 
     public static void sleep(int second) {
 
-        second*=1000;
+        second*=1000; //put 1000 back
 
         try {
 

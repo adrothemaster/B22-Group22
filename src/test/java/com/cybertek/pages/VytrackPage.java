@@ -41,8 +41,26 @@ public class VytrackPage {
     @FindBy(xpath = "//a[@data-size='10']")
     public WebElement ViewPerPage10;
 
+    @FindBy(linkText = "Vehicle Contracts")
+    public WebElement storeManagerVehicleContracts;
 
+    @FindBy(xpath = "//a[@class='btn main-group btn-primary pull-right ']")
+    public WebElement storeManagerCreateVehicleContractButton;
 
+    @FindBy(linkText = "Cancel")
+    public WebElement storeManagerVehicleContractsCancel;
+
+    @FindBy(linkText = "Fleet")
+    public WebElement getStoreManagerFleetSelector;
+
+    @FindBy(xpath = "//tr[@class='grid-row row-click-action'][1]")
+    public WebElement storeManagerChooseVariable;
+
+    @FindBy(linkText = "Edit")
+    public WebElement storeManagerEditButton;
+
+    @FindBy(linkText = "Delete")
+    public WebElement storeMangerDeleteButton;
 
 
 

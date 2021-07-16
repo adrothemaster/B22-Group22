@@ -7,15 +7,19 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class NavigateToReset {
 
+    @BeforeMethod
+    public void driverConstructor(){
+        Driver.getDriver().get("https://qa3.vytrack.com/user/login");
+
+    }
 
     @Test
     public void click_reset_button_test(){
-        Driver.getDriver().get("https://qa3.vytrack.com/user/login");
-
         VytrackPage vytrackPage = new VytrackPage();
         WebDriverWait wait = new WebDriverWait(Driver.getDriver(), 10);
 

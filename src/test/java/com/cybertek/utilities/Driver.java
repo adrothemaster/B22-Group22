@@ -21,6 +21,10 @@ public class Driver {
      */
     private static WebDriver driver;
 
+    //public static void remindHeapOfSomething(){
+    //     driver.findElement(By.xpath("(//button[@class='ytp-ad-overlay-close-button'])[3]"));
+   // }
+
     /*
     Creating re-usable utility method that will return same 'driver' instance everytime we call it.
      */
@@ -61,6 +65,7 @@ public class Driver {
 
 
     }
+
 
     /*
     this method makes sure we have some form of driver session or driver ID.
